@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Hub Multilink Website</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Link Container */
+        .link-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        /* Link Styles */
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a:hover {
+            background-color: #45a049;
+            transform: translateY(-4px);
+        }
+
+        /* Image Styling within Links */
+        a img {
+            margin: 10px 0;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            transition: transform 0.2s ease;
+        }
+
+        a:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Spacing adjustments for text within links */
+        a span {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        /* Button Style */
+        .enter-links-btn {
+            margin-bottom: 30px;
+            padding: 15px 30px;
+            font-size: 1em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .enter-links-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the School Hub Multilink Website</h1>
+
+    <div class="link-container" id="links">
+        <a href="https://saisu.ppnv1.mograsys.com/sign-in" target="_blank">
+            <img src="mograsys.png" alt="Visit Mograsys">
+            <span>Visit Mograsys</span>
+        </a>
+        <a href="https://www.classdojo.com/v2/" target="_blank">
+            <img src="classdojo.png" alt="Visit ClassDojo">
+            <span>Visit ClassDojo</span>
+        </a>
+        <a href="https://teams.microsoft.com/v2/" target="_blank">
+            <img src="Teams.jpeg" alt="Visit Microsoft Teams">
+            <span>Visit Teams Website</span>
+        </a>
+    </div>
+
+</body>
+</html>

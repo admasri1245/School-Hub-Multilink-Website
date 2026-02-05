@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Hub Multilink Website</title>
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Search Bar */
+        #searchBar {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        /* Link Container */
+        .link-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* Link Cards */
+        .link-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            min-height: 170px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card:hover {
+            background-color: #45a049;
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+
+        .link-card img {
+            max-width: 100%;
+            height: auto;
+            max-height: 80px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 2px solid #ddd;
+        }
+
+        .link-card span {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>Welcome to the School Hub Multilink Website</h1>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" placeholder="Search websites...">
+
+    <div class="link-container" id="linkContainer">
+
+        <a class="link-card" href="https://www.hmhco.com" target="_blank" rel="noopener noreferrer" aria-label="Visit HMH">
+            <img src="hmh.png" alt="HMH Logo" loading="lazy">
+            <span>HMH</span>
+        </a>
+
+        <a class="link-card" href="https://app.assessprep.com" target="_blank" rel="noopener noreferrer" aria-label="Visit AssessPrep">
+            <img src="Assessprep.jpeg" alt="AssessPrep Logo" loading="lazy">
+            <span>AssessPrep</span>
+        </a>
+
+        <a class="link-card" href="https://www.quizizz.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Quizizz">
+            <img src="Quizizz.png" alt="Quizizz Logo" loading="lazy">
+            <span>Quizizz</span>
+        </a>
+
+        <a class="link-card" href="https://www.blooket.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Blooket">
+            <img src="Blooket.jpeg" alt="Blooket Logo" loading="lazy">
+            <span>Blooket</span>
+        </a>
+
+        <a class="link-card" href="https://teams.microsoft.com/v2/" target="_blank" rel="noopener noreferrer" aria-label="Visit Microsoft Teams">
+            <img src="Teams.jpeg" alt="Microsoft Teams Logo" loading="lazy">
+            <span>Microsoft Teams</span>
+        </a>
+
+        <a class="link-card" href="https://www.office.com/?auth=2" target="_blank" rel="noopener noreferrer" aria-label="Visit Microsoft 365">
+            <img src="Micrrosoft 365.png" alt="Microsoft 365 Logo" loading="lazy">
+            <span>Microsoft 365</span>
+        </a>
+
+        <a class="link-card" href="https://portal.achieve3000.com/index" target="_blank" rel="noopener noreferrer" aria-label="Visit Achieve3000">
+            <img src="Achieve3000.png" alt="Achieve3000 Logo" loading="lazy">
+            <span>Achieve3000</span>
+        </a>
+
+        <a class="link-card" href="https://islamictreasure.royaltechni.com/login" target="_blank" rel="noopener noreferrer" aria-label="Visit Islamic Treasures">
+            <img src="IslamicTreasures.png" alt="Islamic Treasures Logo" loading="lazy">
+            <span>Islamic Treasures</span>
+        </a>
+
+        <a class="link-card" href="https://www.ixl.com" target="_blank" rel="noopener noreferrer" aria-label="Visit IXL">
+            <img src="IXL.png" alt="IXL Logo" loading="lazy">
+            <span>IXL</span>
+        </a>
+
+        <a class="link-card" href="https://apps.explorelearning.com/account/el/login/student?gizmos=1" target="_blank" rel="noopener noreferrer" aria-label="Visit Gizmos">
+            <img src="Gizmos.png" alt="Gizmos Logo" loading="lazy">
+            <span>Gizmos</span>
+        </a>
+
+        <a class="link-card" href="https://earth.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Google Earth">
+            <img src="Google Earth.png" alt="Google Earth Logo" loading="lazy">
+            <span>Google Earth</span>
+        </a>
+
+        <a class="link-card" href="https://www.mheducation.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit McGraw Hill">
+            <img src="McGrawHill.png" alt="McGraw Hill Logo" loading="lazy">
+            <span>McGraw Hill</span>
+        </a>
+
+        <a class="link-card" href="https://padlet.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Padlet">
+            <img src="Padlet.png" alt="Padlet Logo" loading="lazy">
+            <span>Padlet</span>
+        </a>
+
+        <a class="link-card" href="https://teachinghistory.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Teaching History">
+            <img src="TeachingHistory.png" alt="Teaching History Logo" loading="lazy">
+            <span>Teaching History</span>
+        </a>
+
+        <a class="link-card" href="https://www.timeforkids.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Time for Kids">
+            <img src="TimeForKids.png" alt="Time for Kids Logo" loading="lazy">
+            <span>Time for Kids</span>
+        </a>
+
+        <a class="link-card" href="https://vision.icivics.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit iCivics">
+            <img src="ICivics.png" alt="iCivics Logo" loading="lazy">
+            <span>iCivics</span>
+        </a>
+
+    </div>
+</main>
+
+<script>
+    // Search functionality
+    const searchBar = document.getElementById('searchBar');
+    const linkContainer = document.getElementById('linkContainer');
+    const links = linkContainer.getElementsByClassName('link-card');
+
+    searchBar.addEventListener('input', function() {
+        const filter = searchBar.value.toLowerCase();
+
+        Array.from(links).forEach(link => {
+            const text = link.querySelector('span').textContent.toLowerCase();
+            if (text.includes(filter)) {
+                link.style.display = 'flex';
+            } else {
+                link.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
